@@ -1,0 +1,17 @@
+<!DOCUTYPE html>
+<hmtl>
+<head>
+  <title>test index</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>bulletin borad</h1>
+  <ul>
+    <% @bulletins.each do |bulletin| %>
+      <li><%= bulletin.id %></li>
+      <li><%= bulletin.content %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
+      
