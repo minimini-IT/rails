@@ -6,12 +6,18 @@
 </head>
 <body>
   <h1>bulletin borad</h1>
-  <ul>
+  <table>
+    <tr>
+      <th>番号</th>
+      <th>タイトル</th>
+      <th>内容</th>
+    </tr>
     <% @bulletins.each do |bulletin| %>
-      <li><%= bulletin.id %></li>
-      <li><%= bulletin.content %></li>
+    <tr>
+      <td><%= bulletin.id %></td>
+      <td><%= bulletin.title %></td>
+      <td><%= bulletin.content %></td>
+    </tr>
     <% end %>
-  </ul>
 </body>
 </html>
-      
