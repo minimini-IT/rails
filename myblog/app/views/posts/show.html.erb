@@ -3,16 +3,7 @@
 <h3>Comments</h3>
 <%= form_for ([@post, @post.comments.build]) do |f| %>
   <p>
-  <%= f.text_field :title, placeholder: "enter title" %>
-  <% if @post.errors.messages[:title].any? %>
-    <span class="error"><%= @post.errors.messages[:title][0] %></span>
-  <% end %>
-  </p>
-  <p>
-  <%= f.text_area :body, placeholder: "enter body text" %>
-  <% if @post.errors.messages[:body].any? %>
-    <span class="error"><%= @post.errors.messages[:body][0] %></span>
-  <% end %>
+  <%= f.text_field :body %>
   </p>
   <p>
   <%= f.submit %>
